@@ -51,10 +51,10 @@ const Contextstate =  ({children} : contextChildType) => {
 
     const [empData , setEmpData] = useState(localItemsUser);
     const [workInfo , setWorkInfo] = useState<workInfoType>(localItemsWorkInfo);
-    const [clickedCard,setClickedCard] = useState<newUserType|null>(null);
+    const [clickedCard,setClickedCard] = useState<newUserType | null>(null);
     // adding to local storage 
     useEffect (()=>{
-        console.log("ksafjlkalfkaljlflakflkfa")
+        // console.log("ksafjlkalfkaljlflakflkfa")
          localStorage.setItem("user" , JSON.stringify(empData));
          localStorage.setItem("workInfo" , JSON.stringify(workInfo));
      } , [empData]);

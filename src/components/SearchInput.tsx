@@ -11,7 +11,7 @@ export const SearchInput = ({keyword,handleKeyword}:searchInputPropType) => {
   return (
     <>
           
-       <div className="border border-2 p-1 mobile-view-search-input">
+       <div className="border border-2 p-1 mobile-view-search-input d-flex align-items-center">
             <i className="fa fa-search text-muted"></i>
             <input type="search" id="search" placeholder="Enter any keyword" value = {keyword} onChange={handleKey}/>
         </div>

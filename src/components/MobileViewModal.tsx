@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { userContext } from "../contexts/contextState";
+import { newUserType } from "../Types/types";
 import EmployeeDataEditModal from "./EmployeeDataEditModal";
 
 export default function MobileViewModal() {
@@ -9,7 +10,7 @@ export default function MobileViewModal() {
   const handleDelete = () => {
     setEmpData(empData.filter((emp) => emp !== clickedCard));
    // handleDelete(id);
-    setClickedCard(null);
+    setClickedCard({} as newUserType);
   };
 
 //   const handleDeleteUser = ()=>{
@@ -29,7 +30,7 @@ export default function MobileViewModal() {
 //     profile:''
 // });
  const  handleEditFormModal = ()=>{
-   setClickedCard(null);
+   setClickedCard({} as newUserType);
  }
  const openEditForm = ()=>{
      console.log(clickedCard)

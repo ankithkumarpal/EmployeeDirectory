@@ -18,9 +18,10 @@ export const EmployeeAddModal = ({setAlphabetTag,setFilterTag}:EmployeeAddModalP
             const reader  =  new FileReader();
             reader.readAsDataURL(file);
             reader.addEventListener("load", () => {
-                newUser.profile = reader.result as string;
+                let x = reader.result as string
+                newUser.profile = x;
                 console.log(newUser.profile)
-                setShowImg(newUser.profile);
+                setShowImg(x);
             });
             }
         };
@@ -124,12 +125,12 @@ export const EmployeeAddModal = ({setAlphabetTag,setFilterTag}:EmployeeAddModalP
     <Modal.Body>
     <div className="user-img" style={{position:"relative",width:"105px",height:"113px",zIndex:1}}>
             <img src={showImg}  style={{width:"105px" , height:"113px",position:"relative" , zIndex:5}} />
-            <label htmlFor="emp-img-input">
+            <label htmlFor="emp-img">
                     <i className="fa-solid fa-user-pen"></i>
                     <input
                   type="file"
                   accept="image/*"
-                  id="emp-img-input"
+                  id="emp-img"
                   className="d-none form-input"
                   onChange={onChangePicture}
                 />

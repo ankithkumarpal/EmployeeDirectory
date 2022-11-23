@@ -10,15 +10,16 @@ export default function EmployeeDataEditModal() {
   const contxt = useContext(userContext);
   const {clickedCard , setClickedCard} = contxt;
   const [showImg ,setShowImg]  = useState<string>("");
-  const onChangePicture = (e : React.ChangeEvent<HTMLInputElement>) => {
+  const onChangePictures = (e : React.ChangeEvent<HTMLInputElement>) => {
       let files = e.target.files;
       if (files != null) {
       let file = files[0];
       const reader  =  new FileReader();
       reader.readAsDataURL(file);
       reader.addEventListener("load", () => {
+          let x = reader.result as string;
           clickedCard!.profile  = reader.result as (string);
-          console.log(clickedCard!.profile)
+          // console.log(clickedCard!.profile)
           setShowImg(clickedCard!.profile );
       });
       }
@@ -63,7 +64,7 @@ export default function EmployeeDataEditModal() {
                   accept="image/*"
                   id="emp-img-input"
                   className="d-none form-input"
-                  onChange={onChangePicture}
+                  onChange={onChangePictures}
                 />
                     {/* <div id="employee-image-container">add photo</div> */}
             </label>
