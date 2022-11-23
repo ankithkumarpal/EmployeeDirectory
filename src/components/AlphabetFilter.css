@@ -1,0 +1,50 @@
+.aplhabet-selected{
+   font-weight: bold;
+   font-size: 1rem;
+   /* background-color: white; */
+   /* color: #00FFFF !important; */
+   border: 2px solid ;
+}
+ @media only screen and (max-width: 1334px) {
+      #alphabetFilter{
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        color: red;
+        /* background-color:red; */
+       }
+       #alphabetFilter :hover{
+        /* color: aqua; */
+        /* background-color: red; */
+       }
+       .mobile-view-alphabet{
+        background-color: rgba(0, 0, 0, 0);
+        color: grey !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        font-size: 2vh;
+        /* font-size: 2vh; */
+      }
+      .mobile-view-alphabet:hover{
+         font-size: 1.2rem;
+         font-weight: bold;
+         /* color: #00FFFF !important; */
+         color: #05e8e8cb !important;
+      }
+      .aplhabet-selected{
+        font-size: 1.2rem;
+        font-weight: bold;
+        /* color: #00FFFF !important; */
+        color:blue !important;
+      }
+      .aplhabet-selected{
+        font-weight: bold;
+        font-size: 1rem;
+        /* background-color: white; */
+        /* color: #00FFFF !important; */
+        /* border: 2px solid ; */
+        border: none;
+     }
+      
+  }
+

@@ -1,0 +1,28 @@
+
+#Filter{
+    width: 20vw;
+    height: 55h;
+    /* background-color: red; */
+}
+.flist:hover{
+   cursor: pointer;
+   color: rgb(7, 185, 255);
+}
+.filter-inner ul li :hover{
+    /* cursor: pointer; */
+}
+
+.filter-selected{
+    color: #00FFFF
+}
+
+@media only screen and (max-width: 1334px) {
+    #Filter{
+        width: 100%;
+        
+    }
+    .mobile-view-side-filter{
+        width: 90%;
+        border: none !important;
+    }
+  }

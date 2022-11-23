@@ -1,0 +1,30 @@
+
+ .modal-mobile-view-btn{
+    border-radius: 0;
+    /* font-size: 14px; */
+ }
+
+ /* style={{marginBottom:"15px" , height:"5vh" , 
+   width:"80%" , borderRadius:0 , borderBottom:"1px solid black" 
+   , borderRight:"1px solid black"}}  */
+ .form-feilds input{
+   margin-bottom: 15px;
+   height: 5vh;
+   width: 80%;
+   border-radius: 0;
+   border-bottom:1px solid black;
+   border-right: 1px solid black;
+
+ }
+ .form-feilds select{
+   margin-bottom: 15px;
+   width: 80%;
+   border-bottom: 1px solid black;
+   border-right: 1px solid black;
+ }
+@media only screen and (max-width: 500px) {
+    .modal-mobile-view-btn{
+        border-radius: 0;
+        font-size: 14px;
+     }
+}

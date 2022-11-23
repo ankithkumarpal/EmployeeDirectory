@@ -1,0 +1,32 @@
+
+@media only screen and (max-width: 1330px) {
+.mobile-view-search-input i {
+    position: relative;
+    font-size: 1.4rem;
+    top: 4px;
+    left: 12px;
+    color: lightgray;
+    z-index:-1
+}
+.mobile-view-search-input  {
+    
+    size: 8vh;
+}
+.mobile-view-search-input input{
+    margin-left: 25px;
+    font-size: 0.9rem;
+    /* padding-left: 30px; */
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+}
+
+@media only screen and (max-width: 355px) {
+    .mobile-view-search-input i{
+        font-size: 5vw;
+      }
+    
+    .mobile-view-search-input input{
+        font-size: 3.5vw;
+    }
+}
